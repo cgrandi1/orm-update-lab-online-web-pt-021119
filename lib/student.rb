@@ -59,7 +59,7 @@ class Student
   end
 
 
-  def self.find_by_name
+  def self.find_by_name(NAME)
     sql = <<-SQL
       SELECT * FROM students
       WHERE name = ?
